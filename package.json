@@ -1,0 +1,16 @@
+{
+  "name": "win-explorer-custom-folder",
+  "version": "1.0.3",
+  "description": "create custom folder on windows explorer",
+  "main": "lib/explorerCustomFolder.js",
+  "scripts": {
+    "start": "node test/test.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lineCode",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^3.1.0",
+    "winreg": "git+https://github.com/tgds/node-winreg.git"
+  }
+}

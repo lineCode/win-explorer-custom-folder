@@ -11,6 +11,14 @@ explorerCustomFolder.createFolder('System', 'C:\\Windows', 'C:\\Windows\\explore
     .catch(err => {
         console.log(err)
     })
+    
+explorerCustomFolder.deleteFolder('80f022a0-f605-11e7-adcc-c1307da35532')
+    .then(uuid => {
+        console.log('delete ok')
+    })
+    .catch(err => {
+        console.log(err)
+    })
 ```
 
 ## Parameters
@@ -30,3 +38,7 @@ createFolder(name, path, iconExePath, uuid)
 
 #### `uuid (Optional)`
 - the unique uuid of the folder, if not set, it will create a new uuid，if you need modify the folder, you need set the uuid last new
+
+```javascript
+deleteFolder(uuid)
+```
